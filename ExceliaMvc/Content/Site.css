@@ -22,3 +22,15 @@ select,
 textarea {
     max-width: 280px;
 }
+
+table > tbody > tr:nth-child(odd) {
+    background-color: skyblue;
+}
+
+table > tbody > tr:nth-child(even) {
+    background-color: lawngreen;
+}
+
+button {
+    border-radius: 10px;
+}

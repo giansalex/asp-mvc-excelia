@@ -7,7 +7,7 @@ namespace ExceliaMvc.DAL
     public class ApplicationDbContext : DbContext
     {
         public ApplicationDbContext()
-            : base("ExceliaDb")
+            : base("ExceliaContext")
         {
 
         }
