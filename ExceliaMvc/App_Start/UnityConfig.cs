@@ -1,6 +1,8 @@
+using ExceliaMvc.DAL;
 using System;
 
 using Unity;
+using Unity.AspNet.Mvc;
 
 namespace ExceliaMvc
 {
@@ -41,7 +43,7 @@ namespace ExceliaMvc
             // container.LoadConfiguration();
 
             // TODO: Register your type's mappings here.
-            // container.RegisterType<IProductRepository, ProductRepository>();
+            container.RegisterType<ApplicationDbContext>(new PerRequestLifetimeManager());
         }
     }
 }
